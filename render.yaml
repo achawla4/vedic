@@ -1,9 +1,6 @@
 services:
-  - type: web
+  - type: static-site
     name: vedic-site
     env: static
     buildCommand: npm run build
-    publishDir: build/
-    branches:
-      only:
-        - main
+    staticPublishDir: build/
