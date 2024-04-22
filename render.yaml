@@ -1,5 +1,9 @@
+# Exported from Render on 2024-04-22T14:58:07Z
 services:
-    name: hrealite-site
-    env: static
-    buildCommand: npm run build
-    publishDir: build/
+- type: web
+  name: vedic
+  runtime: static
+  repo: https://github.com/achawla4/vedic
+  buildCommand: build
+  staticPublishPath: public
+version: "1"
